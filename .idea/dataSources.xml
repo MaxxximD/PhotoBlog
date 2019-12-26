@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails PhotoBlog: production" uuid="a4ad9d32-0d58-4046-9b89-300cc5391a7e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/PhotoBlog_production</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails PhotoBlog: development" uuid="74e74161-03b4-4169-bec7-f9b63aab6748">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/PhotoBlog_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails PhotoBlog: test" uuid="b988b585-76c8-428a-9d0e-12a1e6723a3c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/PhotoBlog_test</jdbc-url>
+    </data-source>
+  </component>
+</project>
