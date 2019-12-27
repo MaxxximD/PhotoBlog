@@ -1,4 +1,7 @@
 class PicturesController < ApplicationController
+
+  before_action :authenticate_user!, except: [:index, :show]
+
   def create
     @picture = Picture.new(image_params)
     @picture.save

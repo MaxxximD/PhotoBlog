@@ -1,5 +1,13 @@
 <h1>Статьи</h1>
 
+<% if user_signed_in? && current_user.admin? %>
+<%=link_to 'Новая статья', new_admin_post_path, class: 'btn btn btn-light btn-sm' %>
+<% end %>
+
+<% if user_signed_in? && current_user.admin? %>
+  <%=link_to 'Категории', admin_categories_path, class: 'btn btn btn-light btn-sm' %>
+<% end %>
+
 <%= render @posts %>
 
 <%= will_paginate @posts, renderer: 'BootstrapPaginationHelper::LinkRenderer' %>
