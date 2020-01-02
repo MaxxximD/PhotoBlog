@@ -17,5 +17,6 @@ class Post < ApplicationRecord
     end
   end
   
+  has_one_attached :image
 
 end

@@ -9,6 +9,7 @@ class Admin::PostsController < Admin::AdminController
     @post = Post.new(post_params)
     if @post.save
       redirect_to @post, success: 'Статья успешно создана'
+      @post.image.attach(params[:image])
     else
       flash.now[:danger] = 'Статья не создана'
       render :new
