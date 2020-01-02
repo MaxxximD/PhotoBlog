@@ -58,19 +58,16 @@ gem 'carrierwave', '~> 2.0'
 
 gem 'mini_magick'
 
-gem 'trix-rails', require: 'trix'
-
-gem 'rails-i18n', '~> 6.0.0'
-
-gem 'wysiwyg-rails'
-
-#gem 'froala-editor-sdk'
-
 gem 'ancestry'
 
 gem 'will_paginate-bootstrap'
 
 gem 'devise'
+
+gem 'image_processing', '~> 1.2'
+
+gem 'aws-sdk-s3', require: false
+
 
 
 

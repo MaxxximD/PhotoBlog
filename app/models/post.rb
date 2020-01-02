@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  has_rich_text :body
   mount_uploader :image, ImageUploader
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
@@ -15,5 +16,6 @@ class Post < ApplicationRecord
       Tag.where(name: name.strip).first_or_create!
     end
   end
+  
 
 end
