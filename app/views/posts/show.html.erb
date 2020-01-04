@@ -20,7 +20,7 @@
   </section>
 
   <section class="post-body">
-    <%= image_tag @post.image.url(:large), class: 'img-show' if @post.image? %>
+    <%= image_tag(@post.large) if @post.image.attached? %>
     <%= @post.body %>
   </section>
 </article>
