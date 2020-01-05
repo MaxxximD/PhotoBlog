@@ -11,6 +11,8 @@ module PhotoBlog
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.i18n.available_locales = [:ru, :en]
+
     config.i18n.default_locale = :ru
 
 

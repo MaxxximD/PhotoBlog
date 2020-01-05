@@ -18,6 +18,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="<%= posts_path %>">Статьи<span class="sr-only">(current)</span></a>
           </li>
+          
         </ul>
 
         <ul class="navbar-nav pull-xs-right">
@@ -38,6 +39,12 @@
               <%= link_to "Регистрация", new_user_registration_path, class: "nav-link" %>
             </li>
           <% end %>
+           <li class="nav-item <%= " active" if I18n.locale == :ru %>">
+              <%= link_to "Рус", { locale: :ru }, class: "nav-link" %>
+           </li>
+           <li class="nav-item <%= " active" if I18n.locale == :en %>">
+              <%= link_to "Eng", { locale: :en }, class: "nav-link" %>
+           </li>
         </ul>
       </div>
       </nav>
@@ -46,11 +53,13 @@
     <div class="container main">
       <div class="row">
         <div class="col-md-12">
-          <% flash.each do |name, message| %>
-          <div class="alert <%= bootstrap_class_for(name) %><%= name %>">
-            <button class="close" data-dismiss = "alert">&times;</button>
-            <%= message %>
-          </div>
+           <% flash.each do |name, message| %>
+            <div class="alert <%= bootstrap_class_for(name) %>">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <%= message %>
+            </div>
           <% end %>
         </div>
       </div>
@@ -71,6 +80,7 @@
          </div>
        </div>
     </div>
+  
 
   </body>
 </html>
