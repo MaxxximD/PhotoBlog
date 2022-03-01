@@ -64,7 +64,7 @@ gem 'will_paginate-bootstrap'
 
 gem 'devise'
 
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 
 
 
